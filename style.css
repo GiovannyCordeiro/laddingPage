@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto Mono";
 }
 
 .header{
@@ -94,6 +95,7 @@ div.content-infos{
     height: 70vh;
     width: inherit;
     display: flex;
+    margin-bottom: 20px ;
     align-items: center;
     justify-content: center;
 }
@@ -124,7 +126,7 @@ div.ciText{
     display: flex;
     flex-direction: column;
     padding-bottom: 50px;
-    padding-left: 20px
+    padding-left: 50px
 }
 
 div.ciText h3{
@@ -137,7 +139,56 @@ div.ciText p{
     width: 70%;
 }
 
+/*individual-content*/
 
+.individual-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+div.individual-content h2{
+    font-size: 2em;
+    padding-bottom:30px;
+}
+
+div.individual-content p{
+    width: 70%;
+    font-size: 1.2em;
+    padding-bottom: 130px;
+}
+
+div.individual-content img{
+    width: 50rem;
+}
+
+/*More-content*/
+
+section.more-content{
+    width: 100%;
+    height: 100vh;
+    /* background-color: green; */
+}
+
+div.mr-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 10vh;
+    /* background-color: gray; */
+}
+
+div.mr-text h2{
+    font-size: 2.3em;
+    padding-bottom: 20px;
+}
+
+div.mr-text p{
+    font-size: 1em;
+}
 
 
 
@@ -200,12 +251,33 @@ div.ciText p{
     }
     div.ciText{
         align-items: center;
+        height: 20vh;
+        background-color: antiquewhite;
     }
 
     div.ciText p{
         text-align: center;
         width: 80%;
     }
+
+    /*individual-content*/
+
+    div.individual-content img{
+        width: 100%;
+    }
+
+    /*section more content*/
+
+    
+div.mr-text h2{
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+}
+
+div.mr-text p{
+    font-size: 0.8em;
+}
+
 }
 
 
