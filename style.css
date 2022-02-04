@@ -5,6 +5,8 @@
     font-family: "Roboto Mono";
 }
 
+
+
 .header{
     width:100%;
     height: 100vh;
@@ -251,7 +253,7 @@ div.mr-text p{
 }
 
 .patrocinadores img{
-    padding: 0 40px;
+    padding: 0 28px;
     max-width: 500px;
     max-height:500px;
 }
@@ -281,6 +283,36 @@ div.mr-text p{
 
 }
 
+/*footer*/
+.footer{
+    margin-top: 100px;
+    height: 20vh;
+    background-color: rgb(231, 231, 231);
+}
+
+.iw-footer{
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.iw-footer ul{
+    list-style: none;
+}
+
+.iw-footer li{
+    padding-bottom: 10px;
+}
+
+.iw-footer a{
+    text-decoration: none;
+    color:rgb(88, 88, 88);
+}
+
+.icons-footer a{
+    padding-right: 10px;
+}
 
 @media screen and (max-width:1024px){
 
@@ -400,6 +432,30 @@ div.mr-text p{
     .boxcontent{
        margin-top: 50px;
        height: 50vh;
+    }
+
+    /*footer*/
+    .footer{
+        height: auto;
+    }
+    
+    .iw-footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .iw-footer img{
+        padding-bottom:50px;
+    }
+    
+
+    .iw-footer li{
+        padding-bottom: 30px;
+    }
+    
+    .icons-footer a{
+        text-align: center;
     }
     
 }
