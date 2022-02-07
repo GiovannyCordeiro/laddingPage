@@ -54,8 +54,8 @@
 
 .btn a{
     padding: 20px 80px;
-    background-color:green;
-    border-bottom: 3px solid rgb(61, 61, 61);
+    background-color:#21bda7;
+    border-bottom: 2px solid rgb(61, 61, 61);
     margin-left: 20px;
     text-decoration: none;
     color:white;
@@ -64,7 +64,7 @@
 }
 
 #btn2{
-    background-color:cornflowerblue;
+    background-color:#6174ff;
 }
 
 /*section infos*/
@@ -78,19 +78,20 @@ div.infos-text{
     width: inherit;
     height: 30vh;
     display: flex;
+    padding-bottom: 20px;
     flex-direction:column;
     align-items: center;
     justify-content: center;
 }
 
 div.infos-text h1{
-    font-size: 2.5em;
+    font-size: 2.3em;
     padding-bottom: 20px;
 }
 
 div.infos-text p{
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
     width: 60%;
 }
 
@@ -292,7 +293,7 @@ div.mr-text p{
 
 .iw-footer{
     display: flex;
-    padding-top: 40px;
+    padding-top: 24px;
     justify-content: space-around;
     align-items: center;
 }
@@ -313,6 +314,29 @@ div.mr-text p{
 .icons-footer a{
     padding-right: 10px;
 }
+
+.content{
+    opacity: 0;
+}
+
+#content-anim{
+    animation-name: animContent; /*serve para linkar a animação ao objeto*/
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;/*diz para a animação "quando você terminar, não reseta para o valor inicial, fica no valor que está disposto para você*/
+    transform: translateY(-30px);
+}
+
+@keyframes animContent{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        transform:translateY(0);
+        opacity: 1;
+    }
+}
+
 
 @media screen and (max-width:1024px){
 
